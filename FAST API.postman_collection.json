@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "f225e3ca-f030-410f-a0ef-70011aaa728d",
+		"name": "FAST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:80/items/?a=nihai",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/items/?a=nihai",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"items",
+						""
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "nihai"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:80/nihao/Saidywin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/nihao/Saidywin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"nihao",
+						"Saidywin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:80/items/121",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "abc",
+						"value": "12345",
+						"type": "text"
+					},
+					{
+						"key": "hello",
+						"value": "nihao1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"item\": {\r\n        \"name\": \"Foo\",\r\n        \"description\": \"The pretender\",\r\n        \"price\": 42.0,\r\n        \"tax\": 3.2\r\n    },\r\n    \"user\": {\r\n        \"username\": \"dave\",\r\n        \"full_name\": \"Dave Grohl\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/items/121",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"items",
+						"121"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:80/items/1",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "12345",
+						"type": "text"
+					},
+					{
+						"key": "hello",
+						"value": "nihao1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:80/items/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
